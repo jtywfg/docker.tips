@@ -51,7 +51,7 @@ jobs:
           #docker-compose up -d --build
           #/usr/local/python3/bin/docker-compose up -d --build
           docker image pull wwffggle/dockertips:latest
-          docker container run --rm -d -p 80:80 --name web wwffggle/dockertips:latest
+          docker container run --rm -d -p 8080:80 --name web wwffggle/dockertips:latest
 
   # deploy:
   #   runs-on: ubuntu-latest
