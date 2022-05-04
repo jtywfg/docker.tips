@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="docker-swarm">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/source/docker-swarm/vagrant-setup-ubuntu.zip!/" />
+      <root url="jar://$PROJECT_DIR$/source/docker-swarm/vagrant-setup.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

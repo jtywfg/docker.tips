@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="docker-podman">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/source/docker-podman/podman-vagrant.zip!/" />
+      <root url="jar://$PROJECT_DIR$/source/docker-podman/docker-rootless.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

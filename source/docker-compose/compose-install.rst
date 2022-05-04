@@ -7,7 +7,7 @@ Windows和Mac在默认安装了docker desktop以后，docker-compose随之自动
 
 .. code-block:: powershell
 
-    PS C:\Users\Peng Xiao\docker.tips> docker-compose --version
+    PS C:\Users\Peng Xiao\jtyjy.tech> docker-compose --version
     docker-compose version 1.29.2, build 5becea4c
 
 Linux用户需要自行安装

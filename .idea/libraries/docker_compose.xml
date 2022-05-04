@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="docker-compose">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/source/docker-compose/compose-healthcheck-flask.zip!/" />
+      <root url="jar://$PROJECT_DIR$/source/docker-compose/compose-scale-example-2.zip!/" />
+      <root url="jar://$PROJECT_DIR$/source/docker-compose/compose-scale-example-1.zip!/" />
+      <root url="jar://$PROJECT_DIR$/source/docker-compose/compose-env.zip!/" />
+      <root url="jar://$PROJECT_DIR$/source/docker-compose/compose-healthcheck-redis.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

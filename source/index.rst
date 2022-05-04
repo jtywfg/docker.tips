@@ -12,11 +12,11 @@ Docker Tips (Docker笔记)
 
 .. note::
 
-   此站的永久域名是 https://www.docker.tips 欢迎收藏
+   此站的域名是 https://www.jtyjy.tech
   
 .. note::
 
-   如果大家发现文章中的错误，欢迎提PR或者issue指正 https://github.com/xiaopeng163/docker.tips/issues
+   如果大家发现文章中的错误，欢迎提PR或者issue指正 https://github.com/wwffggle/jtyjy.tech/issues
 
    也欢迎大家关注我的微信公众号，会不定期分享一些Docker的技术文章
 

@@ -6,8 +6,8 @@ GitHub Actions 文档 https://docs.github.com/en/actions
 
 课程源码
 
-- https://github.com/xiaopeng163/docker.tips
-- https://github.com/xiaopeng163/flask-redis
+- https://github.com/wwffggle/jtyjy.tech
+- https://github.com/wwffggle/flask-redis
 
 Ansible入门系列视频
 

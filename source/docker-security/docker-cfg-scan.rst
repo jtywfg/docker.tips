@@ -4,7 +4,7 @@ Docker 配置扫描
 
 Demo project:
 
-https://github.com/xiaopeng163/flask-redis
+https://github.com/wwffggle/flask-redis
 
 
 Docker Bench for Security

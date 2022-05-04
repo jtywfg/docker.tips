@@ -33,18 +33,18 @@
 
 .. code-block:: bash
 
-    vagrant@swarm-manager:~$ docker service create --name client --network mynet xiaopeng163/net-box:latest ping 8.8.8.8
+    vagrant@swarm-manager:~$ docker service create --name client --network mynet wwffggle/net-box:latest ping 8.8.8.8
     skbcdfvgidwafbm4nciq82env
     overall progress: 1 out of 1 tasks
     1/1: running   [==================================================>]
     verify: Service converged
     vagrant@swarm-manager:~$ docker service ls
     ID             NAME      MODE         REPLICAS   IMAGE                        PORTS
-    skbcdfvgidwa   client    replicated   1/1        xiaopeng163/net-box:latest
+    skbcdfvgidwa   client    replicated   1/1        wwffggle/net-box:latest
     jozc1x1c1zpy   web       replicated   2/2        containous/whoami:latest
     vagrant@swarm-manager:~$ docker service ps client
     ID             NAME       IMAGE                        NODE            DESIRED STATE   CURRENT STATE            ERROR     PORTS
-    sg9b3dqrgru4   client.1   xiaopeng163/net-box:latest   swarm-manager   Running         Running 28 seconds ago
+    sg9b3dqrgru4   client.1   wwffggle/net-box:latest   swarm-manager   Running         Running 28 seconds ago
     vagrant@swarm-manager:~$
 
 尝试进入client这个容器，去ping web这个service name， 获取到的IP 10.0.1.30，称之为VIP（虚拟IP）
@@ -54,7 +54,7 @@
 
     vagrant@swarm-manager:~$ docker container ls
     CONTAINER ID   IMAGE                        COMMAND          CREATED          STATUS          PORTS     NAMES
-    36dce35d56e8   xiaopeng163/net-box:latest   "ping 8.8.8.8"   19 minutes ago   Up 19 minutes             client.1.sg9b3dqrgru4f14k2tpxzg2ei
+    36dce35d56e8   wwffggle/net-box:latest   "ping 8.8.8.8"   19 minutes ago   Up 19 minutes             client.1.sg9b3dqrgru4f14k2tpxzg2ei
     vagrant@swarm-manager:~$ docker container exec -it 36dc sh
     /omd # curl web
     Hostname: 6039865a1e5d
