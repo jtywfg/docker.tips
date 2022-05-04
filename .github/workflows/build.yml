@@ -27,18 +27,32 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-    - name: Deploy to Docker swarm
-      uses: wshihadeh/docker-deployment-action@v1
+    - name: Deploy
+      uses: appleboy/ssh-action@master
       with:
-        remote_docker_host: root@49.0.206.102
-        ssh_private_key: ${{ secrets.DOCKER_SSH_PRIVATE_KEY }}
-        ssh_public_key: ${{ secrets.DOCKER_SSH_PUBLIC_KEY }}
-        deployment_mode: docker-swarm
-        copy_stack_file: true
-        deploy_path: /root/my-deployment
-        stack_file_name: docker-compose.yaml
-        keep_files: 5
-        args: wwffggle/flask-redis
+        host: ${{ secrets.HOST }} # 服务器ip
+        username: ${{ secrets.HOST_USERNAME }} # 服务器登录用户名
+        password: ${{ secrets.HOST_PASSWORD }} # 服务器登录密码
+        port: ${{ secrets.HOST_PORT }} # 服务器ssh端口
+        script: |
+          # 切换工作区
+          cd /docker
+          docker container stop web
+          # 下载 docker-compose.yml
+          #wget -O docker-compose.yml https://raw.githubusercontent.com/yiyungent/SimCaptcha/master/docker-compose.yml
+          # 停止并删除旧容器、网络、挂载点
+          #docker-compose down                          # TODO: docker-compose: command not found. 不知道为什么找不到 docker-compose，但直接连接服务器执行就可以
+          #/usr/local/python3/bin/docker-compose down
+          # 删除旧镜像
+          #docker rmi wwffggle/dockertips 
+          # 登录镜像服务器
+          docker login --username=${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_PASSWORD }} 
+          # 创建并启动容器
+          #docker-compose up -d --build
+          #/usr/local/python3/bin/docker-compose up -d --build
+          docker image pull wwffggle/dockertips:latest
+          docker container run --rm -d -p 80:80 --name web wwffggle/dockertips:latest
+
   # deploy:
   #   runs-on: ubuntu-latest
   #   needs: build
