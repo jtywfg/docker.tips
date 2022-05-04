@@ -1,5 +1,9 @@
-name: WFG-docker-image build and push
-on: [push]
+on:   # 配置触发workflow的事件
+  push:
+    branches:   # master分支有push时触发此workflow
+      - 'master'
+#name: WFG-docker-image build and push
+#on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
