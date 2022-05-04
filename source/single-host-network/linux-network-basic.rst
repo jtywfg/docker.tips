@@ -35,7 +35,7 @@ ping命令
 
 .. code-block:: bash
 
-    PS C:\Users\Peng Xiao> ping 192.168.178.1
+    PS C:\Users\Fugui Wu> ping 192.168.178.1
 
     Pinging 192.168.178.1 with 32 bytes of data:
     Reply from 192.168.178.1: bytes=32 time=2ms TTL=64
@@ -47,7 +47,7 @@ ping命令
         Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
     Approximate round trip times in milli-seconds:
         Minimum = 2ms, Maximum = 3ms, Average = 2ms
-    PS C:\Users\Peng Xiao>
+    PS C:\Users\Fugui Wu>
 
 telnet命令
 ~~~~~~~~~~~~~~~~
@@ -118,7 +118,7 @@ Windows下使用 ``TRACERT.EXE``
 
 .. code-block:: bash
 
-    PS C:\Users\Peng Xiao> TRACERT.EXE www.baidu.com
+    PS C:\Users\Fugui Wu> TRACERT.EXE www.baidu.com
 
     Tracing route to www.wshifen.com [104.193.88.123]
     over a maximum of 30 hops:

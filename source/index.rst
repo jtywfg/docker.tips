@@ -12,13 +12,13 @@ Docker Tips (Docker笔记)
 
 .. note::
 
-   此站的域名是 https://www.jtyjy.tech
+   此站的域名是 http://jtyjy.tech
   
 .. note::
 
-   如果大家发现文章中的错误，欢迎提PR或者issue指正 https://github.com/wwffggle/jtyjy.tech/issues
+   该文章为转载，用于全自动化CI/CD持续集成、持续部署、及持续交付搭建！
 
-   也欢迎大家关注我的微信公众号，会不定期分享一些Docker的技术文章
+   有问题也欢迎大家同我交流，会不定期分享一些Docker的技术文章
 
 
 

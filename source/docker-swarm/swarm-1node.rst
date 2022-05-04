@@ -21,7 +21,7 @@ Swarm 单节点快速上手
 
 .. code-block:: powershell
 
-    PS C:\Users\Peng Xiao\code-demo> docker swarm init
+    PS C:\Users\Fugui Wu\code-demo> docker swarm init
     Swarm initialized: current node (vjtstrkxntsacyjtvl18hcbe4) is now a manager.
 
     To add a worker to this swarm, run the following command:
@@ -30,10 +30,10 @@ Swarm 单节点快速上手
 
     To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
 
-    PS C:\Users\Peng Xiao\code-demo> docker node ls
+    PS C:\Users\Fugui Wu\code-demo> docker node ls
     ID                            HOSTNAME         STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
     vjtstrkxntsacyjtvl18hcbe4 *   docker-desktop   Ready     Active         Leader           20.10.7
-    PS C:\Users\Peng Xiao\code-demo>
+    PS C:\Users\Fugui Wu\code-demo>
 
 
 docker swarm init 背后发生了什么

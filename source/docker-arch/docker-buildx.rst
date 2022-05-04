@@ -29,22 +29,22 @@ https://docs.docker.com/buildx/working-with-buildx/
 
 .. code-block:: powershell
 
-    PS C:\Users\Peng Xiao\flask-redis> docker login
+    PS C:\Users\Fugui Wu\flask-redis> docker login
     Authenticating with existing credentials...
     Login Succeeded
-    PS C:\Users\Peng Xiao\flask-redis> docker buildx build --push --platform linux/arm/v7,linux/arm64/v8,linux/amd64 -t wwffggle/flask-redis:latest .
+    PS C:\Users\Fugui Wu\flask-redis> docker buildx build --push --platform linux/arm/v7,linux/arm64/v8,linux/amd64 -t wwffggle/flask-redis:latest .
     [+] Building 0.0s (0/0)
     error: multiple platforms feature is currently not supported for docker driver. Please switch to a different driver (eg. "docker buildx create --use")
-    PS C:\Users\Peng Xiao\flask-redis>
-    PS C:\Users\Peng Xiao\flask-redis> docker buildx ls
+    PS C:\Users\Fugui Wu\flask-redis>
+    PS C:\Users\Fugui Wu\flask-redis> docker buildx ls
     NAME/NODE       DRIVER/ENDPOINT STATUS  PLATFORMS
     desktop-linux   docker
     desktop-linux desktop-linux   running linux/amd64, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, linux/386, linux/arm/v7, linux/arm/v6
     default *       docker
     default       default         running linux/amd64, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, linux/386, linux/arm/v7, linux/arm/v6
-    PS C:\Users\Peng Xiao\flask-redis> docker buildx create --name mybuilder --use
+    PS C:\Users\Fugui Wu\flask-redis> docker buildx create --name mybuilder --use
     mybuilder
-    PS C:\Users\Peng Xiao\flask-redis> docker buildx ls
+    PS C:\Users\Fugui Wu\flask-redis> docker buildx ls
     NAME/NODE       DRIVER/ENDPOINT                STATUS   PLATFORMS
     mybuilder *     docker-container
     mybuilder0    npipe:////./pipe/docker_engine inactive
@@ -52,4 +52,4 @@ https://docs.docker.com/buildx/working-with-buildx/
     desktop-linux desktop-linux                  running  linux/amd64, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, linux/386, linux/arm/v7, linux/arm/v6
     default         docker
     default       default                        running  linux/amd64, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, linux/386, linux/arm/v7, linux/arm/v6
-    PS C:\Users\Peng Xiao\flask-redis> docker buildx build --push --platform linux/arm/v7,linux/arm64/v8,linux/amd64 -t wwffggle/flask-redis:latest .
+    PS C:\Users\Fugui Wu\flask-redis> docker buildx build --push --platform linux/arm/v7,linux/arm64/v8,linux/amd64 -t wwffggle/flask-redis:latest .

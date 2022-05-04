@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Docker Tips'
-copyright = '2021, Peng Xiao'
-author = 'Peng Xiao'
+copyright = '2021, Fugui Wu'
+author = 'Fugui Wu'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1'

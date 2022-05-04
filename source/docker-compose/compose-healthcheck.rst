@@ -37,10 +37,10 @@ docker compose https://docs.docker.com/compose/compose-file/compose-file-v3/#hea
 
 .. code-block:: powershell
 
-    PS C:\Users\Peng Xiao\code-demo\compose-env\flask> dir
+    PS C:\Users\Fugui Wu\code-demo\compose-env\flask> dir
 
 
-        目录: C:\Users\Peng Xiao\code-demo\compose-env\flask
+        目录: C:\Users\Fugui Wu\code-demo\compose-env\flask
 
 
     Mode                 LastWriteTime         Length Name
@@ -49,7 +49,7 @@ docker compose https://docs.docker.com/compose/compose-file/compose-file-v3/#hea
     -a----         2021/7/14      0:32            471 Dockerfile
 
 
-    PS C:\Users\Peng Xiao\code-demo\compose-env\flask> more .\app.py
+    PS C:\Users\Fugui Wu\code-demo\compose-env\flask> more .\app.py
     from flask import Flask
     from redis import StrictRedis
     import os
@@ -65,7 +65,7 @@ docker compose https://docs.docker.com/compose/compose-file/compose-file-v3/#hea
         redis.incr('hits')
         return f"Hello Container World! I have been seen {redis.get('hits').decode('utf-8')} times and my hostname is {socket.gethostname()}.\n"
 
-    PS C:\Users\Peng Xiao\code-demo\compose-env\flask> more .\Dockerfile
+    PS C:\Users\Fugui Wu\code-demo\compose-env\flask> more .\Dockerfile
     FROM python:3.9.5-slim
 
     RUN pip install flask redis && \
